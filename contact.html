@@ -60,7 +60,7 @@
     <div class="contact-grid">
       <div class="reveal">
         <p class="eyebrow">Get In Touch</p>
-        <h2 class="mt-2">We usually reply within a day</h2>
+        <h2 class="mt-2">Questions? Ask us.</h2>
         <div class="mt-4">
           <div class="info-row">
             <div class="icon">📍</div>
@@ -68,7 +68,7 @@
           </div>
           <div class="info-row">
             <div class="icon">💬</div>
-            <div><h3 style="font-size:1rem;">Inquiries</h3><p>Send us a message using the form, or reach out via our booking page.</p></div>
+            <div><h3 style="font-size:1rem;">Inquiries</h3><p>Send a booking inquiry, or use the chat button for quick questions.</p></div>
           </div>
           <div class="info-row">
             <div class="icon">🚭</div>
@@ -77,18 +77,13 @@
         </div>
       </div>
 
-      <form class="reveal reveal-delay-1" onsubmit="event.preventDefault(); document.getElementById('contactSuccess').style.display='block'; this.style.display='none';">
-        <label for="cname">Name</label>
-        <input type="text" id="cname" required placeholder="Your name">
-        <label for="cemail">Email</label>
-        <input type="email" id="cemail" required placeholder="you@email.com">
-        <label for="cmessage">Message</label>
-        <textarea id="cmessage" rows="5" required placeholder="How can we help?"></textarea>
-        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
-      </form>
-      <div id="contactSuccess" style="display:none; text-align:center; padding:var(--space-4); background:var(--cream-dark); border-radius:var(--radius-lg);">
-        <h3>Message sent!</h3>
-        <p class="mt-2">Thanks for reaching out — we'll get back to you shortly.</p>
+      <div class="reveal reveal-delay-1" style="background:var(--cream-dark); border-radius:var(--radius-lg); padding:var(--space-4);">
+        <h3>Ready to book?</h3>
+        <p class="mt-2">Send a booking inquiry with your dates and guest count. We check availability and get back to you with the details.</p>
+        <a href="booking.html" class="btn btn-primary mt-3">Send a booking inquiry</a>
+        <h3 class="mt-4">Just have a question?</h3>
+        <p class="mt-2">Start a chat with the Nap &amp; Yap team. A chat is not a booking: to reserve dates, please send a booking inquiry.</p>
+        <button type="button" class="btn btn-outline-dark mt-3" onclick="var b=document.querySelector('.nyc-btn'); if (b) b.click();">Chat with us</button>
       </div>
     </div>
   </div>
