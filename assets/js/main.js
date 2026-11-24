@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
   try {
     var CHAT_ENDPOINT = 'https://skczajswyzkkvgmwzdmi.supabase.co/functions/v1/chat';
-    var CHAT_PUBLIC = false;
+    var CHAT_PUBLIC = true;
     var STORE_KEY = 'ny_chat_v1';
 
     var preview = /[?&]chat=1(&|$)/.test(location.search);
